@@ -1,0 +1,12 @@
+p = The probability of getting scratched
+
+likelihood: 
+P(X | p) = p^6 * (1-p)^2 = p^N1 * (1-p)^N0
+
+prior distribution: 
+P(p) = Beta(2,2) 
+
+posterior:
+P(p | X) ∝ P(X | p) * P(p) = B(N1 + a, N0 + b) = B(6+2, 2+2) = B(8,4) = p^7 * (1-p)^3 
+
+dP(p | X)/dp = 0 => p = 0.7
